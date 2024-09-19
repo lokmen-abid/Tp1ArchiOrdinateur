@@ -1,7 +1,7 @@
 /*
-    Lokmen Abid CODE PERMANENT UQTR : ABIL19339900
-    Haithem Sissaoui CODE PERMANENT UQTR : SISH27359900
-    Ahmed derouiche CODE PERMANENT UQTR : DERA64310200
+    Lokmen Abid CODE PERMANENT UQTR : ABIL1933****
+    Haithem Sissaoui CODE PERMANENT UQTR : SISH2735****
+    Ahmed derouiche CODE PERMANENT UQTR : DERA6431****
 
 */
 
@@ -14,15 +14,15 @@
 
 
 /*
- * Fonction : additionSINT Cette fonction effectue la somme de deux nombres entiers signés sur 16 bits.
- *            Elle permet de détecter les cas de débordements positifs et négatifs.
- * 2 Paramètres d'entrée :
- *    n1 (short int) Premier nombre entier signé de 16 bits.
- *    n2 (short int) Deuxième nombre entier signé de 16 bits.
- * Paramètres en sortie : Aucun (void)
+ * Fonction : additionSINT Cette fonction effectue la somme de deux nombres entiers signï¿½s sur 16 bits.
+ *            Elle permet de dï¿½tecter les cas de dï¿½bordements positifs et nï¿½gatifs.
+ * 2 Paramï¿½tres d'entrï¿½e :
+ *    n1 (short int) Premier nombre entier signï¿½ de 16 bits.
+ *    n2 (short int) Deuxiï¿½me nombre entier signï¿½ de 16 bits.
+ * Paramï¿½tres en sortie : Aucun (void)
  * Type de passage : Par valeur pour n1 et n2.
- * Cette fonction demande à l'utilisateur de fournir deux nombres entiers signés, puis les additionne.
- * le résultat de la somme et indique s'il y a un débordement positif ou négatif.
+ * Cette fonction demande ï¿½ l'utilisateur de fournir deux nombres entiers signï¿½s, puis les additionne.
+ * le rï¿½sultat de la somme et indique s'il y a un dï¿½bordement positif ou nï¿½gatif.
  */
 
 void additionSINT(){
@@ -36,11 +36,11 @@ void additionSINT(){
 
     if(n1>0 && n2>0 && Somme<0){
         printf("c'est le cas de debordement positif \n");
-        printf(" le réesultat de somme est invalide : %hd \n",Somme);
+        printf(" le rï¿½esultat de somme est invalide : %hd \n",Somme);
     }
     else if (n1<0 && n2<0 && Somme>=0){
         printf("c'est le cas de debordement negatif\n");
-        printf(" le réesultat de somme est invalide : %hd\n",Somme);
+        printf(" le rï¿½esultat de somme est invalide : %hd\n",Somme);
     }
     else
         printf(" Le resultat est valide :%hd \n",Somme);
@@ -49,13 +49,13 @@ void additionSINT(){
 }
 
 /*
- * Fonction : epsilonf Cette fonction évalue l'epsilon de l'architecture INTEL pour la représentation réelle simple précision (float).
+ * Fonction : epsilonf Cette fonction ï¿½value l'epsilon de l'architecture INTEL pour la reprï¿½sentation rï¿½elle simple prï¿½cision (float).
  *            Elle affiche la valeur de l'epsilon ainsi que le nombre de chiffres binaires significatifs de la partie fractionnaire.
- * Paramètres en entrée : Aucun
- * Paramètres en sortie : Aucun
+ * Paramï¿½tres en entrï¿½e : Aucun
+ * Paramï¿½tres en sortie : Aucun
  * Type de passage : Aucun
- * Cette fonction utilise l'algorithme présenté dans les notes de cours pour calculer l'epsilon
- * et détermine le nombre de chiffres binaires significatifs de la partie fractionnaire.
+ * Cette fonction utilise l'algorithme prï¿½sentï¿½ dans les notes de cours pour calculer l'epsilon
+ * et dï¿½termine le nombre de chiffres binaires significatifs de la partie fractionnaire.
  */
 
 void epsilon_f() {
@@ -72,12 +72,12 @@ void epsilon_f() {
     epsilon=epsilon*2;
     dg_binary=dg_binary-1;
 
-    printf("\n Epsilon pour la représentation réelle simple précision (SP) : %e\n", epsilon);
+    printf("\n Epsilon pour la reprï¿½sentation rï¿½elle simple prï¿½cision (SP) : %e\n", epsilon);
     printf("\n Nombre de chiffres binaires significatifs pour SP : %d\n", dg_binary);
 }
 
 /*
-    on'a utiliser la bibliothèque limits.h pour avoir le résultat d'epsilon
+    on'a utiliser la bibliothï¿½que limits.h pour avoir le rï¿½sultat d'epsilon
 */
 
 float epsilonf(){
@@ -89,13 +89,13 @@ float epsilonf(){
 }
 
 /*
- * Fonction : epsilond Cette fonction évalue l'epsilon de l'architecture INTEL pour la représentation double précision (double).
+ * Fonction : epsilond Cette fonction ï¿½value l'epsilon de l'architecture INTEL pour la reprï¿½sentation double prï¿½cision (double).
  *            Elle affiche la valeur de l'epsilon ainsi que le nombre de chiffres binaires significatifs de la partie fractionnaire.
- * Paramètres en entrée : Aucun
- * Paramètres en sortie : Aucun
+ * Paramï¿½tres en entrï¿½e : Aucun
+ * Paramï¿½tres en sortie : Aucun
  * Type de passage : Aucun
- * Cette fonction utilise l'algorithme présenté dans les notes de cours pour calculer l'epsilon
- * et détermine le nombre de chiffres binaires significatifs de la partie fractionnaire.
+ * Cette fonction utilise l'algorithme prï¿½sentï¿½ dans les notes de cours pour calculer l'epsilon
+ * et dï¿½termine le nombre de chiffres binaires significatifs de la partie fractionnaire.
  */
 
 
@@ -113,7 +113,7 @@ void epsilon_d() {
     epsilon=epsilon*2;
     dg_binary=dg_binary-1;
 
-    printf("Epsilon pour la représentation réelle double précision (DP) : %e\n", epsilon);
+    printf("Epsilon pour la reprï¿½sentation rï¿½elle double prï¿½cision (DP) : %e\n", epsilon);
     printf("Nombre de chiffres binaires significatifs pour DP : %d\n", dg_binary);
 }
 
@@ -138,15 +138,15 @@ double max_double(){
 }
 
 /*
- * Fonction : somme_f Cette fonction calcule la sommation successive de 1/n pour n itérations
- *            en utilisant des nombres réels simple précision (float).
- *            Elle affiche la valeur de n, le résultat de la sommation ainsi que l'erreur de calcul.
- * Paramètres en entrée : n (int) nombre d'itérations pour la sommation.
- * Paramètres en sortie : somme_float
+ * Fonction : somme_f Cette fonction calcule la sommation successive de 1/n pour n itï¿½rations
+ *            en utilisant des nombres rï¿½els simple prï¿½cision (float).
+ *            Elle affiche la valeur de n, le rï¿½sultat de la sommation ainsi que l'erreur de calcul.
+ * Paramï¿½tres en entrï¿½e : n (int) nombre d'itï¿½rations pour la sommation.
+ * Paramï¿½tres en sortie : somme_float
  * Type de passage :Par valeur pour n.
- * Cette fonction demande à l'utilisateur de fournir le nombre d'itérations (n), puis elle effectue
- * la sommation successive de 1/n en utilisant des nombres réels simple précision (float).
- * Elle affiche ensuite la valeur de n, le résultat de la sommation et l'erreur de calcul.
+ * Cette fonction demande ï¿½ l'utilisateur de fournir le nombre d'itï¿½rations (n), puis elle effectue
+ * la sommation successive de 1/n en utilisant des nombres rï¿½els simple prï¿½cision (float).
+ * Elle affiche ensuite la valeur de n, le rï¿½sultat de la sommation et l'erreur de calcul.
  */
 
 float Somme_f(int n){
@@ -161,14 +161,14 @@ float Somme_f(int n){
 }
 
 /*
- * Fonction : somme_d  Cette fonction calcule la sommation successive de 1/n pour n itérations en utilisant des nombres réels double précision (double).
- *               Elle affiche la valeur de n, le résultat de la sommation ainsi que l'erreur de calcul.
- * Paramètres en entrée : n (int) nombre d'itérations pour la sommation.
- * Paramètres en sortie : somme_double
+ * Fonction : somme_d  Cette fonction calcule la sommation successive de 1/n pour n itï¿½rations en utilisant des nombres rï¿½els double prï¿½cision (double).
+ *               Elle affiche la valeur de n, le rï¿½sultat de la sommation ainsi que l'erreur de calcul.
+ * Paramï¿½tres en entrï¿½e : n (int) nombre d'itï¿½rations pour la sommation.
+ * Paramï¿½tres en sortie : somme_double
  * Type de passage :Par valeur pour n.
- * Cette fonction demande à l'utilisateur de fournir le nombre d'itérations (n), puis elle effectue
- * la sommation successive de 1/n en utilisant des nombres réels double précision (double).
- * Elle affiche ensuite la valeur de n, le résultat de la sommation et l'erreur de calcul.
+ * Cette fonction demande ï¿½ l'utilisateur de fournir le nombre d'itï¿½rations (n), puis elle effectue
+ * la sommation successive de 1/n en utilisant des nombres rï¿½els double prï¿½cision (double).
+ * Elle affiche ensuite la valeur de n, le rï¿½sultat de la sommation et l'erreur de calcul.
  */
 
 double Somme_d(int n){
@@ -184,13 +184,13 @@ double Somme_d(int n){
 
 /*
  * Fonction : somme_Ascf( somme_Dscf) Cette fonction calcule la sommation ascendante(desdescendante ) de la suite (1/in) pour
- *             i allant de 1 à 32767 (de 32767 jusqu'à 1 ) en utilisant des nombres réels simple précision (float) pour chaque valeur
- *             d'exposant n = 1, 2, 3 . Elle affiche la valeur de n et le résultat de la sommation.
- * Paramètres en entrée : Aucun
- * Paramètres en sortie : somme
+ *             i allant de 1 ï¿½ 32767 (de 32767 jusqu'ï¿½ 1 ) en utilisant des nombres rï¿½els simple prï¿½cision (float) pour chaque valeur
+ *             d'exposant n = 1, 2, 3 . Elle affiche la valeur de n et le rï¿½sultat de la sommation.
+ * Paramï¿½tres en entrï¿½e : Aucun
+ * Paramï¿½tres en sortie : somme
  * Cette fonction utilise l'algorithme de sommation ascendante (desdescendante pour la fonction Dscf) et calcule la somme de la suite (1/in)
- * pour i allant de 1 à 32767, pour chaque valeur d'exposant n = 1, 2, 3 en utilisant des nombres réels simple précision (float).
- * Elle affiche ensuite la valeur de n et le résultat de la sommation.
+ * pour i allant de 1 ï¿½ 32767, pour chaque valeur d'exposant n = 1, 2, 3 en utilisant des nombres rï¿½els simple prï¿½cision (float).
+ * Elle affiche ensuite la valeur de n et le rï¿½sultat de la sommation.
  */
 
 float somme_Ascf(int n){
@@ -214,13 +214,13 @@ float somme_Dscf(int n){
 
 /*
  * Fonction : somme_Ascd( somme_Dscd) Cette fonction calcule la sommation ascendante(desdescendante ) de la suite (1/in) pour
- *             i allant de 1 à 32767 (de 32767 jusqu'à 1 ) en utilisant des nombres réels simple précision (double) pour chaque valeur
- *             d'exposant n = 1, 2, 3 . Elle affiche la valeur de n et le résultat de la sommation.
- * Paramètres en entrée : Aucun
- * Paramètres en sortie : somme
+ *             i allant de 1 ï¿½ 32767 (de 32767 jusqu'ï¿½ 1 ) en utilisant des nombres rï¿½els simple prï¿½cision (double) pour chaque valeur
+ *             d'exposant n = 1, 2, 3 . Elle affiche la valeur de n et le rï¿½sultat de la sommation.
+ * Paramï¿½tres en entrï¿½e : Aucun
+ * Paramï¿½tres en sortie : somme
  * Cette fonction utilise l'algorithme de sommation ascendante (desdescendante pour la fonction Dscd) et calcule la somme de la suite (1/in)
- * pour i allant de 1 à 32767, pour chaque valeur d'exposant n = 1, 2, 3 en utilisant des nombres réels simple précision (double).
- * Elle affiche ensuite la valeur de n et le résultat de la sommation.
+ * pour i allant de 1 ï¿½ 32767, pour chaque valeur d'exposant n = 1, 2, 3 en utilisant des nombres rï¿½els simple prï¿½cision (double).
+ * Elle affiche ensuite la valeur de n et le rï¿½sultat de la sommation.
  */
 
 
@@ -252,14 +252,14 @@ int main()
     /* Deux variables, X et Y, de type (int).
     Nous effectuons des validations sur ces deux valeurs, ensuite*/
     int N,X;
-    //On a effectué l'appel de la fonction additionSINT()
+    //On a effectuï¿½ l'appel de la fonction additionSINT()
     additionSINT();
-    //On a effectué l'appel de la fonction epsilon_f()
+    //On a effectuï¿½ l'appel de la fonction epsilon_f()
     epsilon_f();
     printf("\n");
     epsilonf();
     printf("\n");
-    //On a effectué l'appel de la fonction epsilon_d()
+    //On a effectuï¿½ l'appel de la fonction epsilon_d()
     epsilond();
     printf("\n");
     epsilon_d();
@@ -268,7 +268,7 @@ int main()
     printf("\n");
     max_double();
     /*
-        Nous avons utilisé une boucle do-while pour vérifier la valeur de N.
+        Nous avons utilisï¿½ une boucle do-while pour vï¿½rifier la valeur de N.
     */
     do {
         printf("donne une Valeur N: \n");
@@ -280,23 +280,23 @@ int main()
     double res_d=Somme_d(N);
     printf("Resultat de la sommation double : %lf\n", res_d);
     /*
-        Nous avons utilisé une boucle do-while pour vérifier la valeur de X.
+        Nous avons utilisï¿½ une boucle do-while pour vï¿½rifier la valeur de X.
     */
     do {
         printf("donne une Valeur X: \n");
         scanf("%d",&X);
     }while(!(X==1||X==2|X==3));
     /*
-        on fait l'éxecution de 4 fonctions de somme
+        on fait l'ï¿½xecution de 4 fonctions de somme
     */
     printf("\n");
-    printf("le résultat de la somme ascendante de type float : %f ",somme_Ascf(X));
+    printf("le rï¿½sultat de la somme ascendante de type float : %f ",somme_Ascf(X));
     printf("\n");
-    printf("le résultat de la somme descendante de type float : %f ",somme_Ascd(X));
+    printf("le rï¿½sultat de la somme descendante de type float : %f ",somme_Ascd(X));
     printf("\n");
-    printf("le résultat de la somme ascendante de type double : %f ",somme_Dscf(X));
+    printf("le rï¿½sultat de la somme ascendante de type double : %f ",somme_Dscf(X));
     printf("\n");
-    printf("le résultat de la somme descendante de type double  : %f ",somme_Dscd(X));
+    printf("le rï¿½sultat de la somme descendante de type double  : %f ",somme_Dscd(X));
 
 
     return 0;
